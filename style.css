@@ -333,7 +333,7 @@ select {
   }
 
   .label{
-  top:120px;
+  top:100px;
   }
 
   .results-section h2 {
@@ -892,4 +892,5 @@ select {
     gap: 15px;
   }
 }
+
 
