@@ -305,8 +305,6 @@ select {
 
 .label {
   position: absolute;
-  top: 110px;
-  left: 24px;
   background: dodgerblue;
   color: #fff;
   font-weight: 700;
@@ -332,6 +330,10 @@ select {
   .circle-img {
     width: 130px;
     height: 130px;
+  }
+
+  .label{
+  top:120px;
   }
 
   .results-section h2 {
@@ -890,3 +892,4 @@ select {
     gap: 15px;
   }
 }
+
