@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tooth and Smile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+
+  <!-- ===== Navigation Bar ===== -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="./Assets/logo.png" alt="Tamira Life Logo">
+    </div>
+
+    <div class="nav-buttons">
+      <a href="#form" class="book-btn">Book Appointment</a>
+      <a href="tel:9551120208" class="call-btn">Call Us</a>
+    </div>
+  </header>
+
+  <a href="https://api.whatsapp.com/send/?phone=919551120208&text=Hi+Dr.+Murali+Karthik%2C+please+let+me+know+the+appointment+time+for+consultant.&type=phone_number&app_absent=0"><img src="https://img.icons8.com/?size=100&id=QkXeKixybttw&format=png&color=000000" width="50px" style="position: fixed; bottom: 30px; right:20px;"></a>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Healthy Teeth & Confident Smile — Pain-Free, Lasting Results!</h1>
+
+
+      <h3 style="margin-bottom: 8px;">Here’s what makes Tooth & Smile special:</h3>
+      <ul style="padding: 20px;">
+        <li><b style="color: dodgerblue;">Comprehensive Care</b>: From basic check-ups to advanced cosmetic and implant treatments — all in one place.</li>
+        <li><b style="color: dodgerblue;">Modern Technology</b>: Digital X-rays, painless procedures, and precision-driven results.</li>
+        <li><b style="color: dodgerblue;">Personalized Plans</b>: Every smile is unique — your treatment is too.</li>
+        <li><b style="color: dodgerblue;">Comfort & Trust</b>: Friendly staff, hygienic environment, and transparent communication.</li>
+        <li><b style="color: dodgerblue;">Long-Lasting Results</b>: Treatments designed to keep your teeth healthy and your smile radiant for years.</li>
+      </ul>
+
+
+
+      <p class="stats">Smile confidently again — with expert implants, cosmetic dentistry & painless treatments.</p>
+    </div>
+
+    <div class="form-container" id="form">
+      <h2>Need a Free Consultation !</h2>
+      <p>Submit your details. We'll call you right back!</p>
+<form id="appointmentForm" name="submit-to-google-sheet" method="POST">
+  <input type="text" id="name" name="name" placeholder="Name *" required>
+  <input type="tel" id="mobile" name="mobile" placeholder="Phone Number *" required>
+
+  <label>Online / Offline Appointment</label>
+  <input type="date" name="appointment" id="date" required>
+
+  <label>Select Treatment</label>
+  <select id="treatment" name="problem" required>
+  <option value="">Select a Treatment</option>
+  <option value="DENTAL IMPLANTS">DENTAL IMPLANTS</option>
+  <option value="ALIGNERS">ALIGNERS</option>
+  <option value="CROWN & BRIDGES">CROWN & BRIDGES</option>
+  <option value="ROOT CANAL TREATMENT">ROOT CANAL TREATMENT</option>
+  <option value="DENTURES">DENTURES</option>
+  <option value="SMILE ALIGNMENT">SMILE ALIGNMENT</option>
+  <option value="TOOTH COLOURED FILLINGS">TOOTH COLOURED FILLINGS</option>
+  <option value="EXTRACTION & WISDOM TOOTH REMOVAL">EXTRACTION & WISDOM TOOTH REMOVAL</option>
+  <option value="GUM TREATMENT">GUM TREATMENT</option>
+  <option value="PEDIATRIC DENTISTRY">PEDIATRIC DENTISTRY</option>
+  <option value="others">OTHERS</option>
+  </select>
+
+  <input type="text" id="otherInput" name="pro" class="hidden" placeholder="Please specify your dental problem">
+
+  <button type="submit" class="enquire-btn">Enquire Now</button>
+</form>
+    </div>
+  </section>
+
+
+  <!-- testimoial -->
+
+    <section class="reviews-section">
+  <h2 class="section-title">What our Patients say</h2>
+  <p class="section-subtitle">
+    ⭐⭐⭐⭐⭐&nbsp;Rated 4.9 on Google
+  </p>
+  </section>
+
+<div class="container">
+  <div class="slider" id="slider">
+    <div class="review-card">
+      <img src="https://img.icons8.com/?size=100&id=O9K5DaypaVKw&format=png&color=000000" alt="">
+      <div class="name">Palaniappan</div>
+      <div class="star">★★★★★</div>
+      <div class="text">Great place to recommend. Dr. Murali Karthik is very competent. Had an implant, with all options laid out clearly. Made proper suggestions. We are basically from Germany and therefore can confidently say the treatment is of international standards.</div>
+      <img src="./Assets/gr.png" style="border-radius: none;">
+    </div>
+    <div class="review-card">
+      <img src="https://img.icons8.com/?size=100&id=O9K5DaypaVKw&format=png&color=000000" alt="">
+      <div class="name">Raveda</div>
+      <div class="star">★★★★★</div>
+      <div class="text">I had a good experience with this clinic. Doctors are friendly and treatment was painless. All instruments are sterile and they maintain good hygiene. I was so comfortable during the treatment. Especially for kids you should take them for a checkup.</div>
+      <img src="./Assets/gr.png" style="border-radius: none;">
+    </div>
+    <div class="review-card">
+      <img src="https://img.icons8.com/?size=100&id=O9K5DaypaVKw&format=png&color=000000" alt="">
+      <div class="name">Elango</div>
+      <div class="star">★★★★★</div>
+      <div class="text">What amazing doctors and team. They have done my crowns capping and root canal. I had absolutely no pain at all for the first time. The service was excellent and the facilities were top notch. Would highly recommend this place. God bless team's</div>
+      <img src="./Assets/gr.png" style="border-radius: none;">
+    </div>
+    <div class="review-card">
+      <img src="https://img.icons8.com/?size=100&id=O9K5DaypaVKw&format=png&color=000000" alt="">
+      <div class="name">Sathya Kaliyamoorthy</div>
+      <div class="star">★★★★★</div>
+      <div class="text">Dr Murali Karthik is one of the best dentists I have ever visited. He is very knowledgeable, down to earth, and more than anything very modest and humble. His staff is also equally friendly and responsive. Thanks for making dental procedure so easy for the patients!</div>
+      <img src="./Assets/gr.png" style="border-radius: none;">
+    </div>
+  </div>
+
+  <div class="dots" id="dots"></div>
+</div>
+
+<script>
+const slider = document.getElementById('slider');
+const reviews = document.querySelectorAll('.review-card');
+const dotsContainer = document.getElementById('dots');
+let index = 0;
+
+// create dots dynamically
+reviews.forEach((_,i)=>{
+  const dot=document.createElement('div');
+  dot.classList.add('dot');
+  if(i===0) dot.classList.add('active');
+  dot.addEventListener('click',()=>moveTo(i));
+  dotsContainer.appendChild(dot);
+});
+const dots=document.querySelectorAll('.dot');
+
+function moveTo(i){
+  index=i;
+  slider.style.transform=`translateX(-${i*100}%)`;
+  dots.forEach(d=>d.classList.remove('active'));
+  dots[i].classList.add('active');
+}
+
+function autoSlide(){
+  index++;
+  if(index>=reviews.length){index=0;}
+  moveTo(index);
+}
+let interval=setInterval(autoSlide,3000);
+</script>
+
+
+
+
+
+      <!-- <div class="before-after" style="margin-top: 30px;">
+        <div class="image-box">
+          <img src="./Assets/IMG_1106.JPG" alt="Before Nose Job"><br>
+          <p class="label">BEFORE</p>
+        </div>
+        
+        <div class="image-box">
+          <div class="label">AFTER</div>
+          <img src="./Assets/IMG_2339.jpg" alt="After Nose Job">
+        </div>
+      </div> -->
+
+<section class="top-buttons">
+    <a href="#form" class="btn">Book Your Appointment Online</a>
+    <p style="text-align: center;">Your Healthier Smile Awaits!</p>
+    <!-- <a href="tel:0000000000" class="btn">📞 00-000-00-000</a> -->
+    <!-- <a href="#" class="btn">Visit Us</a> -->
+  </section>
+
+
+  <!-- about us -->
+   <div class="about">
+    <div class="about1">
+      <img src="./Assets/logo.png">
+    </div>
+    <div class="about2">
+      <p class="about-1">About the clinic</p>
+      <p class="about-2">Welcome to Tooth & Smile – Mylapore, Chennai</p>
+      <p class="about-3">At <b>Tooth & Smile</b>, we redefine dental care through precision, comfort, and compassion.
+ Our <b>multi-specialty dental clinic</b> combines <b>world-class technology</b> with <b>expert dental professionals</b> to deliver treatments that are both effective and pain-free.
+Located in the heart of <b>Mylapore</b>, our clinic features <b>ergonomically designed dental chairs, advanced imaging systems</b>, and <b>hygiene protocols</b> — ensuring every visit is smooth, safe, and satisfying.
+</p><br>
+<a href="#form">Enquiry Now</a>
+    </div>
+   </div>
+
+
+  <!-- ====== Results Section ====== --><br>
+  <section class="results-section">
+    <h2>Best Dental Clinic in Chennai — Treatments Designed for You</h2>
+    <p class="subtitle" style="font-weight: 300;">
+      Your smile deserves expert care — and we make that possible with treatments tailored to your needs.
+    </p>
+    <div class="result-main">
+          <div class="result-card">
+    <bold style="font-weight: 800; font-size: 18px;">General Dental Treatments</bold><br>
+    <br><div class="r-card">
+        <p><img src="https://img.icons8.com/?size=100&id=gkgXdvj3Owk3&format=png&color=000000" width="12px">&nbsp;&nbsp;Regular Check-ups: Early detection prevents pain and costly treatments.</p>
+        <p><img src="https://img.icons8.com/?size=100&id=gkgXdvj3Owk3&format=png&color=000000" width="12px">&nbsp;&nbsp;Fillings: Restore teeth function and prevent decay with durable materials.</p>
+        <p><img src="https://img.icons8.com/?size=100&id=gkgXdvj3Owk3&format=png&color=000000" width="12px">&nbsp;&nbsp;Extractions: Safe and precise removal of damaged or infected teeth.</p>
+        <p><img src="https://img.icons8.com/?size=100&id=gkgXdvj3Owk3&format=png&color=000000" width="12px">&nbsp;&nbsp;Scaling & Polishing: Deep cleaning to remove plaque and tartar for fresh breath.</p>
+        <p><img src="https://img.icons8.com/?size=100&id=gkgXdvj3Owk3&format=png&color=000000" width="12px">&nbsp;&nbsp;Digital X-Rays: Accurate, low-radiation diagnostics for better treatment planning.</p>
+    </div>
+    </div>
+
+    <div class="result-card">
+        <bold style="font-weight: 800; font-size: 18px;">Cosmetic & Aesthetic Dentistry</bold><br>
+    <br><div class="r-card">
+        <p><img src="https://img.icons8.com/?size=100&id=gkgXdvj3Owk3&format=png&color=000000" width="12px">&nbsp;&nbsp;Teeth Whitening: Brighten your smile with advanced whitening solutions.</p>
+        <p><img src="https://img.icons8.com/?size=100&id=gkgXdvj3Owk3&format=png&color=000000" width="12px">&nbsp;&nbsp;Ceramic Veneers: Perfect your smile by improving tooth shape, size, and color.</p>
+        <p><img src="https://img.icons8.com/?size=100&id=gkgXdvj3Owk3&format=png&color=000000" width="12px">&nbsp;&nbsp;Smile Designing: Customized makeovers for your dream smile.</p>
+        <p><img src="https://img.icons8.com/?size=100&id=gkgXdvj3Owk3&format=png&color=000000" width="12px">&nbsp;&nbsp;Composite Fillings: Seamlessly blend with your natural teeth for a flawless finish.</p>
+    </div>
+    </div>
+    </div>
+    <div class="results-gallery">
+
+
+      <div class="result-pair">
+        <div class="circle-img">
+          <!-- <div class="label">BEFORE</div> -->
+          <img src="./Assets/102.jpg" alt="Before tooth">
+        </div>
+        <div class="circle-img">
+          <!-- <div class="label">AFTER</div> -->
+          <img src="./Assets/102-1.jpg" alt="After tooth">
+        </div>
+
+        <div class="circle-img">
+          <!-- <div class="label">BEFORE</div> -->
+          <img src="./Assets/101.jpg" alt="Before tooth">
+        </div>
+        <div class="circle-img">
+          <!-- <div class="label">AFTER</div> -->
+          <img src="./Assets/101-1.jpg" alt="After tooth">
+        </div>
+
+        <div class="circle-img">
+          <img src="./Assets/103.JPG" alt="Before tooth">
+        </div>
+        <div class="circle-img">
+          <img src="./Assets/103-1.jpg" alt="After tooth">
+        </div>
+
+        <div class="circle-img">
+          <img src="./Assets/104.jpg" alt="Before tooth">
+        </div>
+        <div class="circle-img">
+          <img src="./Assets/104-1.jpg" alt="After tooth">
+        </div>
+
+        <div class="circle-img">
+          <img src="./Assets/105.jpg" alt="Before tooth">
+        </div>
+        <div class="circle-img">
+          <img src="./Assets/105-1.jpg" alt="After tooth">
+        </div>
+
+        <div class="circle-img">
+          <img src="./Assets/106.jpg" alt="Before tooth">
+        </div>
+        <div class="circle-img">
+          <img src="./Assets/106-1.jpg" alt="After tooth">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Top Buttons ====== -->
+  <section class="top-buttons">
+    <a href="#form" class="btn">Book Appointment</a>
+    <!-- <a href="tel:0000000000" class="btn">📞 00-000-00-000</a> -->
+    <!-- <a href="#" class="btn">Visit Us</a> -->
+  </section>
+
+  <!-- ====== Experts Section ====== -->
+  <section class="experts-section">
+    <h2>Meet Our Chief Dentist</h2>
+    <div class="expert-card">
+      <div class="e-card1">
+        <img src="./Assets/murali.jpg">
+      </div>
+      <div class="e-card2">
+    <p class="subtitle">Dr. Murali Karthik,Chief Dental Surgeon</p>
+    <p>With years of clinical experience and a gentle approach, Dr. Murali Karthick is dedicated to helping patients achieve healthy, confident smiles.
+ Her philosophy centers around precision, comfort, and trust — ensuring every patient feels cared for from consultation to completion.
+She specializes in cosmetic and restorative dentistry, combining artistry with modern techniques to create beautiful, functional smiles.
+ Patients value her for her transparent communication, compassionate care, and attention to detail.</p><br>
+ <a href="#form" class="book-btn">Book an Appointment</a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Why tooth Section -->
+  <section class="section why-section">
+    <h2 class="section-title">Why Choose Tooth & Smile, Mylapore</h2>
+    <div class="why-container">
+      <div class="why-card">
+        <img src="https://img.icons8.com/?size=100&id=103935&format=png&color=000000" alt="Certified Plastic Surgeons">
+        <h4>Expert Dental Team</h4>
+        <p>Experienced specialists in all branches of dentistry.</p>
+      </div>
+      <div class="why-card">
+        <img src="https://img.icons8.com/?size=100&id=KMvSrrbB3DUj&format=png&color=000000" alt="ASPS Logo">
+        <h3>Pain-Free Procedures</h3>
+        <p>Advanced tools and gentle techniques for your comfort</p>
+      </div>
+      <div class="why-card">
+        <img src="https://img.icons8.com/?size=100&id=gB6PzF96MsPt&format=png&color=000000" alt="Happy Clients">
+        <h3>Affordable Excellence</h3>
+        <p>High-quality care at reasonable prices.</p>
+      </div>
+      <div class="why-card">
+        <img src="https://img.icons8.com/?size=100&id=LHzMSuaiS0ty&format=png&color=000000" alt="Happy Clients">
+        <h3>Strict Hygiene & Sterilization</h3>
+        <p>100% patient safety assured.</p>
+      </div>
+
+      <div class="why-card">
+        <img src="https://img.icons8.com/?size=100&id=WhB4FMsxjxMR&format=png&color=000000" alt="Happy Clients">
+        <h3>Advanced Equipment</h3>
+        <p> Digital imaging, laser dentistry, and precision instruments.</p>
+      </div>
+      <div class="why-card">
+        <img src="https://img.icons8.com/?size=100&id=HqrsmveRD0Up&format=png&color=000000" alt="Happy Clients">
+        <h3>All-Age Expertise</h3>
+        <p>Specialized care for children, adults, and senior citizens.</p>
+      </div>
+      <div class="why-card">
+        <img src="https://img.icons8.com/?size=100&id=SSa3O7HCPrBv&format=png&color=000000" alt="Happy Clients">
+        <h3>Smile Transformation Experts</h3>
+        <p>From restoration to aesthetics — we do it all.</p>
+      </div>
+      <div class="why-card">
+        <img src="https://img.icons8.com/?size=100&id=wZxK1C1O0sgf&format=png&color=000000" alt="Happy Clients">
+        <h3>Patient-Centric Approach</h3>
+        <p> We listen, plan, and deliver results that last.</p>
+      </div>    
+    </div>
+  </section>
+
+
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2 class="faq-title">Patient's FAQs Here...</h2>
+
+    <div class="faq-container">
+
+      <div class="faq-item">
+        <h3>Am I a good candidate for dental implants?</h3>
+        <p>
+          If you have healthy gums, good bone density, and overall good health, you’re likely a good candidate. Your dentist will confirm after an oral exam and X-ray.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How long does the procedure take?</h3>
+        <p>
+          The entire process can take 3–6 months, including healing time. The implant placement itself usually takes about 1–2 hours per tooth.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is it painful?</h3>
+        <p>
+          Most patients report minimal discomfort. Local anesthesia is used during the procedure, and mild soreness may occur afterward, manageable with pain relievers.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What are the costs and financing options?</h3>
+        <p>
+Costs vary depending on the number of implants and materials used. Many clinics offer flexible payment plans or financing options to make treatment affordable.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+    <!-- Footer Section -->
+  <footer class="tamira-footer">
+
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="Assets/logo.jpeg" alt="Logo" class="f-logo">
+        <p>Where Every Smile Begins with Care.</p>
+        <p><img src="https://img.icons8.com/?size=16&id=NEiCAz3KRY7l&format=png&color=ffffff">Mylapore, Chennai</p>
+      </div>
+      <div class="" style="text-align: center;">
+        <p class="f-head">Follow Us On</p>
+        <div>
+          <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Furl%3Dhttps%253A%252F%252Fwww.drmuralikarthik.com"><img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" width="40px"></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.drmuralikarthik.com"><img src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000" width="40px"></a>
+          <a href="https://www.google.com/maps/place/Dr.+MURALI+KARTHIK+MDS+-+Prosthodontist/@13.031067,80.274047,12z/data=!4m6!3m5!1s0x3a5267d67e6992fd:0x8aeb9e9ef2400f8e!8m2!3d13.0310671!4d80.2740468!16s%2Fg%2F11f5h8by4g?hl=en&entry=ttu&g_ep=EgoyMDI1MTEwMy4wIKXMDSoASAFQAw%3D%3D"><img src="https://img.icons8.com/?size=100&id=y9LJ0mNaH6XG&format=png&color=000000" width="40px"></a>
+        </div>
+      </div>
+
+      <div class="footer-actions">
+        <p class="f-head">Connect With Us!</p>
+        <a href="tel:9551120208">Call Us : 95511 20208</a><br>
+        <a href="mailto:drmuralikarthik@gmail.com">drmuralikarthik@gmail.com</a><br>
+        <a href="https://www.drmuralikarthik.com/">www.drmuralikarthik.com</a><br>
+        <p>Working Hours : Mon - Sat: 9.00 AM to 8.00 PM | Sun : 10.00 AM to 02.00 PM</p>
+      </div>
+    </div>
+
+
+    <div class="footer-bottom">
+      <p>Copyright © <span class="highlight">Tooth & Smile</span> All rights reserved.</p>
+    </div>
+
+  </footer>
+
+<script
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js"
+  type="module"
+></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.forms["submit-to-google-sheet"];
+  const treatment = document.getElementById("treatment");
+  const otherInput = document.getElementById("otherInput");
+  const button = document.querySelector(".enquire-btn");
+
+  // Show/hide “Other” input dynamically
+  treatment.addEventListener("change", () => {
+    if (treatment.value === "others") {
+      otherInput.classList.remove("hidden");
+      otherInput.style.display = "block";
+      otherInput.required = false;
+    } else {
+      otherInput.classList.add("hidden");
+      otherInput.style.display = "none";
+      otherInput.value = "";
+    }
+  });
+
+  // Handle PHP form submission
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    // Loading state
+    button.disabled = true;
+    const originalText = button.textContent;
+    button.textContent = "Loading...";
+
+    try {
+      const response = await fetch("sendmail.php", {
+        method: "POST",
+        body: new FormData(form)
+      });
+
+      const result = await response.text();
+
+      // Restore button
+      button.disabled = false;
+      button.textContent = originalText;
+
+      if (result.trim() === "success") {
+        swal("✅ Success!", "Your appointment has been submitted successfully!", "success");
+        form.reset();
+        otherInput.classList.add("hidden");
+        otherInput.style.display = "none";
+      } else {
+        swal("⚠️ Error", "Unable to send your appointment. Please try again later.", "error");
+      }
+    } catch (error) {
+      console.error("Fetch Error:", error);
+      swal("⚠️ Error", "Network error. Please check your connection and try again!", "error");
+      button.disabled = false;
+      button.textContent = originalText;
+    }
+  });
+});
+</script>
+
+
+
+
+</body>
+</html>
