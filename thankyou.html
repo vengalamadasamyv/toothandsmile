@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | NSKC Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1E3A8A, #3B82F6, #60A5FA);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    dotlottie-wc {
+      width: 220px;
+      height: 220px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 8px;
+      color: #f0f4ff;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #1E3A8A;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #E0F2FE;
+      transform: translateY(-3px);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <dotlottie-wc
+      src="https://lottie.host/9d24e9dd-e547-443d-956f-ff4feb0cd50a/HU3vdQHxK8.lottie"
+      autoplay
+      loop
+    ></dotlottie-wc>
+    <h1>Thank You!</h1>
+    <p>We’ve received your submission.<br>Our team will contact you soon.</p>
+    <a href="index.html" class="btn">Go to Homepage</a>
+  </div>
+</body>
+</html>
